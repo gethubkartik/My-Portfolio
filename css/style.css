@@ -260,6 +260,7 @@ h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+ 
 }
 
 #hero h1 {
@@ -291,6 +292,11 @@ h6 {
 }
 
 @media (max-width: 768px) {
+
+   #hero {
+    height: 52vh; /* reduce height on smaller screens */
+    background-position: center top;
+  }
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
@@ -303,6 +309,30 @@ h6 {
   }
 }
 
+
+
+/* For mobile phones */
+@media (max-width: 600px) {
+ 
+  #hero {
+    height: 30vh; /* reduce height on smaller screens */
+    background-position: center top;
+  }
+
+  #hero h1 {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  #hero p {
+    font-size: 10px;
+    margin-bottom: 30px;
+  }
+
+  #hero p span {
+    border-bottom-width: 2px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Sections General
